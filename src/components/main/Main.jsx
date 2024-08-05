@@ -1,9 +1,9 @@
 import React from "react";
 import "./main.scss";
 import Hero from "../hero/Hero";
-import flip from "../../assets/flip.jpg"
-import tvv from "../../assets/tvv.webp"
-import ice from "../../assets/ice.webp"
+import hero1 from "../../assets/hero-01.avif"
+import hero2 from "../../assets/hero-02.avif"
+import hero3 from "../../assets/hero-03.avif"
 
 
 const flipitem = [
@@ -22,7 +22,7 @@ const Main = () => {
         bg={"#f4f4f4"}
         title={"Mobile & Computing"}
         nav={flipitem}
-        img={flip}
+        img={hero1}
         desc={"Galaxy Z Flip6"}
         price={
           "get up to $650 instate tride-in credit and double the storage on us with select color"
@@ -34,7 +34,7 @@ const Main = () => {
         }
         title={"TV & Audio"}
         nav={tv}
-        img={tvv}
+        img={hero2}
         desc={"Discover new depth of detail"}
         price={
           "buy on $65 instate tride-in class Samsung Neo the storage on us with select color"
@@ -44,7 +44,7 @@ const Main = () => {
         bg={"#f2f2f2"}
         title={"Home Appliances"}
         nav={xl}
-        img={ice}
+        img={hero3}
         desc={"Save on bespoke all summer"}
         price={
           "get  $1300 instate tride-in Bespoke model from Amerika select color"
