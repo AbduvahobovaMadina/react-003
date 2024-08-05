@@ -1,0 +1,125 @@
+.product__wrap {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    b {
+      font-size: 38px;
+    }
+    .container {
+      max-width: 1348px;
+      width: 100%;
+      padding: 0 16px;
+      margin: 0 auto;
+    }
+    .container {
+      border: 1px solid red;
+    }
+    .product__nav {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+      P{
+        transition: .3s;
+      }
+      p:hover{
+        color: gray;
+      }
+      @media (max-width:900px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    img {
+      width: 100%;
+    }
+    .product__card__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      @media (max-width:1200px) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 100px;
+      }
+      @media (max-width:800px) {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+      .card {
+        width: 350px;
+        height: 400px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #ddddddc5;
+        border-radius: 20px;
+        transition: .3s;
+        &:hover{
+            box-shadow: 1px 1px 15px 0.5px  rgba(220, 220, 220, 0.459);
+
+        }
+        @media (max-width: 800px) {
+            width: 100%;
+            
+        }
+        .img {
+          object-fit: cover;
+          overflow: hidden;
+          padding: 10px;
+          
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        i {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          background: dodgerblue;
+          border-radius: 25px;
+          padding: 2px 9px;
+          z-index: 2;
+        }
+        button {
+          position: absolute;
+          bottom: -30px;
+          background: black;
+          padding: 5px 15px;
+          color: wheat;
+          border-radius: 20px;
+        }
+      }
+      .card:hover {
+        button {
+          transition: all ease 0.5s;
+          position: absolute;
+          bottom: 20px;
+          background: black;
+          padding: 5px 15px;
+          color: #fff;
+          border-radius: 20px;
+        }
+        p,
+        span {
+          color: transparent;
+          // display: none;
+        }
+        img {
+          transform: scale(1.1);
+          transition: all ease 0.4s;
+        }
+      }
+    }
+  }
